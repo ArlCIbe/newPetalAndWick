@@ -1,0 +1,35 @@
+/* .container{
+    padding-top: 10%;
+    width: 60%; height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+} */
+
+ header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background:antiquewhite;
+    color:#F9577E;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'papyrus';
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+a{
+    color:#F9577E;
+}
+.navbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
