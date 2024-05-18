@@ -37,24 +37,3 @@ body{
     margin: 0;
     padding: 0;
 }
-
-.contactPref{
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-#prefContact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contactPref label{
-    margin-right: 10px;
-}
-
-/* .offerProm{
-    display: flex;
-    align-items: center;
-} */
