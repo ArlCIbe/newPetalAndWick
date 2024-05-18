@@ -1,68 +1,60 @@
-body {
-    display: flex;          
-    justify-content: center;/* Center content horizontally */
-    align-items: center;    /* Center content vertically */
-    min-height: 100vh;      /* Full viewport height */
-    backdrop-filter: blur(8px);
-    margin: 0;              /* Remove default margin */
-}
-
-.container {
-    width: 60%;             
-    padding: 20px;          
-    display: flex;          
-    flex-direction: column; /* Stack children vertically */
-    align-items: center;    /* Center align the child elements */
-    gap: 20px;              /* Space between child elements */
-}
-
-
-header {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: antiquewhite;
-    color: #F9577E;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-* {
-    box-sizing: border-box;
-    font-family: 'Papyrus', sans-serif;
-}
-
-input, select, textarea {
-    width: 100%;            /*expand input to full container width*/
-    padding: 8px;           /* Padding inside input */
-    margin-top: 4px;        
-}
-
 form {
     display: flex;          
-    flex-direction: column; /* Stack form vertically */
+    flex-direction: column;
     width: 100%;           
-}
-
-h1, h2 {
-    text-align: center;     
-    width: 100%;         
 }
 
 label {
     width: 100%;    
 }
 
-.navbar {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
+h2 {
+    text-align: center;     
+    width: 100%;  
+    padding-top: 30px;       
 }
 
-a {
-    color: #F9577E;
-    text-decoration: none; 
+h1 {
+    text-align: center;     
+    width: 100%;  
+    padding-top: 30px;
 }
+
+input, select, textarea {
+    width: 100%;            
+    padding: 8px;           
+    margin-top: 4px;        
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contactPref{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#prefContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactPref label{
+    margin-right: 10px;
+}
+
+/* .offerProm{
+    display: flex;
+    align-items: center;
+} */

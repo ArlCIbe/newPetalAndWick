@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
     <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./shared.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <header>
 
-    <div class="frontPage">
+    <div>
 
         <a href="#" class="logo">Petal & Wick</a>
 
@@ -58,15 +59,21 @@
             <h2>Select your preferred method of contact:</h2>
     
             <form id="prefContact">
-    
-                <label for="prefEmail">Email</label>
-                <input type="checkbox" name="prefEmail" id="prefEmail">
-    
-                <label for="prefPhone">Phone</label>
-                <input type="checkbox" name="prefPhone" id="prefPhone">
-    
-                <label for="prefText">Text</label>
-                <input type="checkbox" name="prefText" id="prefText">
+
+                <div class="contactPref">                
+                    <label for="prefEmail">Email</label>
+                    <input type="checkbox" name="prefEmail" id="prefEmail">
+                </div>
+
+                <div class="contactPref">
+                    <label for="prefPhone">Phone</label>
+                    <input type="checkbox" name="prefPhone" id="prefPhone">
+                </div>
+        
+                <div class="contactPref">
+                    <label for="prefText">Text</label>
+                    <input type="checkbox" name="prefText" id="prefText">
+                </div>
         
             </form>
     
@@ -98,16 +105,17 @@
                 <input type="text" name="state" id="state">
                 <!-- <select name="state" id="state"> would insert info here using JS, API endpoint: https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_hash.json, I would target the state object itself-->
 
-                <label for="promotions">Click here to receive news and exclusive offers!</label>
-                <input type="checkbox" name="promotions" id="promotions">
-                <!-- link to a page with a welcome coupon with a button that says something like "shop now" which rredirects to homepage if I have time -->
+                    <!-- <div class="offerProm">
+                        <label for="promotions">Click here to receive exclusive offers!</label>
+                        <input type="checkbox" name="promotions" id="promotions">
+                        link to a page with a welcome coupon with a button that says something like "shop now" which redirects to homepage if I have time
+                    </div> -->
                 
             </form>
 
             <a href="./cart.html">
 
-                <label for="addToCart">Add to Cart</label>
-                <input type="button" name="addToCart" id="addToCart">
+                <input type="button" value="Place Order" name="addToCart" id="addToCart">
 
             </a>
 
